@@ -36,7 +36,7 @@ except ImportError:
     gzip = None
     GZIP_BASE = object
 
-__version__ = '2.0.2'
+__version__ = '2.0.3'
 
 
 class FakeShutdownEvent(object):
@@ -968,6 +968,7 @@ class SpeedtestResults(object):
             'bytes_received': self.bytes_received,
             'share': self._share,
             'client': self.client,
+            'secure': self.secure,
         }
 
     @staticmethod
